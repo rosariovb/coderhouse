@@ -5,50 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Document</title>
+    <title>Servicios</title>
 </head>
 
 <body>
-    <div class="envoltura"></div>
+
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Malcriadas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
+                        <li class="nav-item">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="productos.html">Productos</a>
 
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="servicios.html">Servicios</a>
 
-                </li>
-                <li>
-                    <a href="catalogo.html">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Catalogo</a>
 
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
 
-                </li>
-            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
         </nav>
+
+        <section class="servicios">
+            <h3> Glitter Bar</h3>
+            <h4> A continuacion dejamos imagenes de nuestros eventos</h4>
+            <p>Te ofrecemos un servicio de glitter bar para tus eventos,
+                fiestas de 15 años, casamientos, eventos laborales o sociales.
+            </p>
+
+        </section>
+
     </header>
 
-    <section class="servicios">
-        <h1> Glitter Bar</h1>
-        <h3> A continuacion dejamos imagenes de nuestros eventos</h3>
-        <p>Te ofrecemos un servicio de glitter bar para tus eventos,
-            fiestas de 15 años, casamientos, eventos laborales o sociales.
-        </p>
-        <h4> solicita tu presupuesto </h4>
-    </section>
 
-    <div img class="container">
-        <div class="padre"></div>
+
+
+    <section class="galeria">
         <div>
             <img src="../img/glibar.jpeg" alt="glitterbar">
         </div>
@@ -67,26 +84,33 @@
         <div>
             <img src="../img/ultb.jpeg" alt="glitterbar">
         </div>
-    </div>
-    </div>
+    </section>
 
 
 
 
-    <footer class="main-footer">
+
+    <footer>
+        <aside> Encontramos en : </aside>
         <div class="redes">
+
             <a href="https://www.instagram.com/malcriadas.accesorios/" target="_blank">
-                <img src="../img/icons8-instagram-48.png" alt="instagram">
+                <img class="piepag" src="../img/icons8-instagram-48.png" alt="instagram">
             </a>
 
-            <img src="../img/logo.jpeg" alt="malcriadas">
+            <img class="piepag" src="../img/logg.jpeg" alt="malcriadas">
 
             <a href="https://linktr.ee/Malcriadas" target="_blank">
-                <img src="../img/icons8-linktree-48.png" alt="linktree">
+                <img class="piepag" src="../img/icons8-linktree-48.png" alt="linktree">
             </a>
 
         </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

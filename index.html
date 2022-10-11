@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
   <title>Malcriadas</title>
 
@@ -13,59 +15,133 @@
 <body>
 
   <header>
-    <nav>
-      <li>
-        <a href="index.html">Inicio</a>
+    <section class="inicio">
+      <h1> ¡ Bienvenidos a Malcriadas !</h1>
 
-      </li>
-      <li>
-        <a href="./section/productos.html">Productos</a>
+    </section>
 
-      </li>
-      <li>
-        <a href="./section/servicios.html">Servicios</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Malcriadas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-      </li>
-      <li>
-        <a href="./section/catalogo.html">Catalogo</a>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
 
-      </li>
-      <li>
-        <a href="./section/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./section/productos.html">Productos</a>
 
-      </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./section/servicios.html">Servicios</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./section/catalogo.html">Catalogo</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./section/contacto.html">Contacto</a>
+
+            </li>
+
+          </ul>
+        </div>
+      </div>
     </nav>
+
 
   </header>
 
-  <section class="inicio">
-    <h1> Bienvenidos a Malcriadas</h1>
-    <h3>Un lugar lleno de brillo </h3>
-  </section>
+  <div class="row">
+    <div class="col-lg-6">
 
-    
+      <p> Hola mi nombre es <span>Camila tengo 26 añitos y soy de argentina</span>
+        Queria contarles un poco de mi historia y de que se trata este empredimiento..</p>
 
-    <img class="square image-square" src="./img/logg.jpeg" alt="asd">
+      <p> Este proyecto surgio desde que decidi emprender y poder entrar en el mundo del glitter
+        en el cual te suma mucho ya se para tu outfit o sumarlo a una fiesta en donde puedas compartir
+        momentos especiales con tus amigxs, el glitter siempre le da un toque extra a cada ocasion y los Strass
+        al estilo Emilia.</p>
+
+      <p>Desde hace mas de 4 años me dedico a vender glitter en gel , en polvo
+        strass, tatuajes temporales, pintura para darle brillo a tu pared y muchas cosas mas
+        que vas a ir encontrando a medida que vayas navegando por la pagina.
+      </p>
 
 
-  
+      <img class="square image-square" src="./img/logg.jpeg" alt="el logo de nuestra pagina">
 
+    </div>
 
-
-    <footer>
-      <div class="redes">
-          <a href="https://www.instagram.com/malcriadas.accesorios/" target="_blank">
-              <img src="../img/icons8-instagram-48.png" alt="instagram">
-          </a>
-
-          <img src="../img/logo.jpeg" alt="malcriadas">
-
-          <a href="https://linktr.ee/Malcriadas" target="_blank">
-              <img src="../img/icons8-linktree-48.png" alt="linktree">
-          </a>
-
+    <div class="col-lg-6">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/caru.jpeg" class="d-block w-100" alt="brillos">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/casur.jpeg" class="d-block w-100" alt="brillos">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carus.jpeg" class="d-block w-100" alt="brillos">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <footer>
+    <aside> Encontramos en : </aside>
+    <div class="redes">
+
+
+      <a href="https://www.instagram.com/malcriadas.accesorios" target="_blank">
+
+        <img class="piepag" src="./img/icons8-instagram-48.png" alt="instagram">
+      </a>
+
+      <img class="piepag" src="./img/logg.jpeg" alt="malcriadas">
+
+      <a href="https://linktr.ee/Malcriadas" target="_blank">
+        <img class="piepag" src="./img/icons8-linktree-48.png" alt="linktree">
+      </a>
+
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 </body>
 

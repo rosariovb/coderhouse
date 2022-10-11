@@ -9,6 +9,9 @@
 
 
 body {
+     /*index*/
+
+     text-align: center;
      font-family: 'Poppins', sans-serif;
      background-color: rgba(248, 195, 226, 0.37)
 }
@@ -30,7 +33,7 @@ nav li {
 }
 
 a {
-     color: grey;
+     color: rgb(73, 71, 71);
 }
 
 
@@ -51,16 +54,31 @@ section {
      align-items: center;
 }
 
+span {
+     color: darkmagenta;
+}
+
+p {
+     margin-left: 10px;
+     text-align: center;
+}
+
 img {
      align-content: center
 }
 
+footer aside{
+     justify-self: flex-start;
+}
 footer {
-     padding: 3em;
-     margin-top: 1.5em;
+     display:grid;
+     grid-template-columns: 1fr 1fr 1fr ;
+     padding: 3px;
+     margin-top: 1px;
      margin-bottom: 0;
      background-color: darkgray;
 }
+
 
 
 header {
@@ -75,12 +93,9 @@ nav {
      grid-area: servicios;
 }
 
-
-
 .container {
      grid-area: container;
 }
-
 
 
 .footer {
@@ -90,42 +105,101 @@ nav {
 
 
 
-.envoltura {
-     margin-bottom: 1, 5em;
-     gap: 20px;
-     display: grid;
-     grid-template-areas:
-          "header"
-          "nav"
-          "servicios"
-          "container"
-          "footer"
 
 
-}
 
-.padre {
+/*section servic,produc,*/  
+.galeria {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 1fr;
-     justify-items: center;
-     gap: 15px
+     grid-template-rows: 1fr 1fr;
+     gap: 25px 25px;
+     grid-auto-flow: row;
 }
 
-img {
-     border: 8px solid pink;
+
+.image-square {
+     height: 220px;
+     width: 220px;
+     border: 8px dotted pink;
+     margin-bottom: 10px;
+     margin-left: 40px;
      margin-top: 15px
-     
-     
+
 }
+
+.carousel {
+     padding-left: 5px;
+     padding-top: 0px;
+     margin-bottom: 10px;
+
+}
+
+/*form*/
+.formulario {
+     max-width: 640px;
+     margin:0 auto;
+
+}
+
+
+footer .piepag {
+     padding: 0px 5px 10px 5px;
+     height: 48px;
+     width: 48px;
+
+}
+
+
+
+@media(min-width:480px) {
+     .galeria {
+          grid-template-columns: 1fr;
+     }
+}
+
+
+@media(min-width:768px) {
+     .galeria {
+          grid-template-columns: 1fr 1fr;
+     }
+}
+
+
+@media (min-width:1200px) {
+     .galeria {
+          grid-template-columns: 1fr 1fr 1fr;
+     }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(min-width:480px) {
      .envoltura {
           margin: 0px;
           grid-template-columns: 1fr 1fr;
           grid-template-areas:
-               "header  header"
-               "nav  nav"
+               "nav  nav nav"
+               "header header header "
                "servicios servicios"
                "container container"
                "footer footer ";
@@ -190,27 +264,21 @@ img {
 }
 
 @media(min-width:1024px) {
-     body{
+     body {
           background-color: lavenderblush;
-     }     
+     }
 
-     .padre{
+     .padre {
           display: grid;
           margin: 0;
           height: auto;
           grid-template-columns: 1fr 1fr;
 
-   
-          
+
+
      }
 
-     img {
-          width: 475px;
-          height: 400px;
-          margin-top:20px
-     }
 
-     footer {
-          margin-top: 0px;
-     }
+
+
 }

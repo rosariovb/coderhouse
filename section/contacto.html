@@ -5,88 +5,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Document</title>
+    <title>Contacto</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="productos.html">Productos</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Malcriadas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
 
-            </li>
-            <li>
-                <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
 
-            </li>
-            <li>
-                <a href="catalogo.html">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Catalogo</a>
 
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
 
-            </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <section class="contacto">
         <h1>Cualquier duda contactanos </h1>
-    </section>
 
-    <section>
-        <h1>Escribinos</h1>
     </section>
     <!-- formulario de contacto -->
-    <section>
-        <article>
-            <form action="#">
-                <br>
-                <label for="nombre"> ¿Cual es tu nombre?
-                    <input type="text" placeholder="Tu nombre"><br>
-                </label><br>
-                <label for="email">Dejanos tu email:
-                    <input type="email" placeholder="aaa@gmail.com" name="email"><br>
-                </label><br>
-                <label for="Sugerencias">Sugerencias:
-                    <textarea placeholder="Sugerencias"></textarea>
-                </label><br>
-                <p>Que preferis strass o gel ?</p>
-                <select name="letra" id="letra">
-                    <option value="G">Gel</option>
-                    <option value="S">Strass</option>
 
-                </select>
-                <div>Queres recibir novedades?
-                    <input type="checkbox" name="acepta" value="1">
-                </div>
-                <input type="submit" value="Si,me gustaria">
-                <input type="reset" value="Por ahora no "><br>
-            </form>
-        </article>
+    <section class="formulario">
+        <div class="mb-3">
+
+            <label for="exampleFormControlInput1" class="form-label">¿Cual es tu nombre?</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Dejanos tu email:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Sugerencias</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <p>Que preferis strass o gel ?</p>
+        <select class="form-select" name="letra" id="letra">
+            <option value="G">Gel</option>
+            <option value="S">Strass</option>
+
+        </select>
+        <div>Queres recibir novedades?
+
+            <input type="checkbox" name="acepta" value="1">
+
+        </div>
+        <input class="btn btn-secondary" type="submit" value="Si,me gustaria">
+        <input class="btn btn-secondary" type="reset" value="Por ahora no "><br>
+
+
+        </div>
+
     </section>
     <!-- cierre de form contacto -->
 
     <!-- inicio de footer -->
- 
+
     <footer>
+        <aside> Encontramos en : </aside>
         <div class="redes">
+
+
             <a href="https://www.instagram.com/malcriadas.accesorios/" target="_blank">
-                <img src="../img/icons8-instagram-48.png" alt="instagram">
+                <img class="piepag" src="../img/icons8-instagram-48.png" alt="instagram">
             </a>
 
-            <img src="../img/logo.jpeg" alt="malcriadas">
+            <img class="piepag" src="../img/logg.jpeg" alt="malcriadas">
 
             <a href="https://linktr.ee/Malcriadas" target="_blank">
-                <img src="../img/icons8-linktree-48.png" alt="linktree">
+                <img class="piepag" src="../img/icons8-linktree-48.png" alt="linktree">
             </a>
 
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
 </body>
 
