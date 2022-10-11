@@ -1,0 +1,28 @@
+header {
+    padding: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: pink;
+    text-align: center;
+    word-spacing: 10px;
+    font-size: 20px;
+
+    nav {
+        display: flex;
+
+
+        ul {
+            justify-content: space-between;
+
+
+            li {
+                display: inline-block;
+
+                a {
+                    color: rgb(73, 71, 71);
+                }
+
+            }
+        }
+    }
+}

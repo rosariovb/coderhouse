@@ -1,0 +1,123 @@
+@import "fuente";
+@import "nav" ;
+@import "general";
+@import "mediaque";
+
+
+
+section {
+     text-align: center;
+     padding: 5px;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     background-color: lavenderblush
+}
+
+
+
+
+.row {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+}
+
+span {
+     color: darkmagenta;
+}
+
+p {
+     margin-left: 10px;
+     text-align: center;
+}
+
+img {
+     align-content: center
+}
+
+footer aside{
+     justify-self: flex-start;
+}
+footer {
+     display:grid;
+     grid-template-columns: 1fr 1fr 1fr ;
+     padding: 3px;
+     margin-top: 1px;
+     margin-bottom: 0;
+     background-color: darkgray;
+}
+
+
+
+header {
+     grid-area: header;
+}
+
+nav {
+     grid-area: nav;
+}
+
+.servicios {
+     grid-area: servicios;
+}
+
+.container {
+     grid-area: container;
+}
+
+
+.footer {
+     grid-area: footer;
+
+}
+
+
+
+
+
+
+/*section servic,produc,*/  
+.galeria {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr;
+     gap: 25px 25px;
+     grid-auto-flow: row;
+}
+
+
+.image-square {
+     height: 220px;
+     width: 220px;
+     border: 8px dotted pink;
+     margin-bottom: 10px;
+     margin-left: 40px;
+     margin-top: 15px
+
+}
+
+.carousel {
+     padding-left: 5px;
+     padding-top: 0px;
+     margin-bottom: 10px;
+
+}
+
+/*form*/
+.formulario {
+     max-width: 640px;
+     margin:0 auto;
+
+}
+
+
+footer .piepag {
+     padding: 0px 5px 10px 5px;
+     height: 48px;
+     width: 48px;
+
+}
+
+
+
+
