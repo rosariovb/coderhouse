@@ -1,0 +1,66 @@
+ /*section servic,produc,*/
+ .galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+ 
+    @media(min-width:420px) {
+ 
+      grid-template-columns: 1fr;
+ 
+    }
+ 
+    @media(min-width:768px) {
+ 
+      grid-template-columns: 1fr 1fr;
+    }
+ 
+ 
+    @media (min-width:1024px) {
+ 
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+ 
+  }
+
+  /*FOOTER*/
+
+.fcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  padding: 3px;
+  margin-top: 1px;
+  margin-bottom: 0;
+  background-color: darkgray;
+
+  aside {
+      justify-self: flex-start;
+      
+    
+
+      .piepag {
+          padding: 0px 5px 10px 5px;
+          height: 30px;
+          width: 30px;
+
+          @media(min-width:420px) {
+
+              grid-template-columns: 1fr;
+         
+            }
+         
+            @media(min-width:768px) {
+         
+              grid-template-columns: 1fr 1fr;
+            }
+         
+         
+            @media (min-width:1024px) {
+         
+              grid-template-columns: 1fr 1fr 1fr;
+            }
+         
+      }
+  }
+}

@@ -1,0 +1,42 @@
+ /*SERVICIOS*/
+ .img-serv {
+   border: 3px double $color;
+
+ }
+
+
+ /*PRODUCTOS*/
+ section {
+   text-align: center;
+   padding: 5px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   background-color: lavenderblush;
+
+   .galeria-img {
+     border: 3px ridge pink;
+   }
+ }
+
+
+ /*CATALOGO*/
+ .cata{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 5px;
+   
+ }
+
+
+
+ /*CONTACTO*/
+ .contacto h1 {
+   min-width: auto;
+ }
+
+ .formulario {
+   max-width: 640px;
+   margin: 0 auto;
+   background-color: rgba(248, 202, 210, 0.781);
+ }

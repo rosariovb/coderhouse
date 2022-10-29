@@ -1,9 +1,21 @@
+/*section*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(248, 195, 226, 0.37);
+}
+
 header {
   padding: 30px;
   margin-top: 5px;
   margin-bottom: 5px;
-  background-color: pink;
+  background-image: url(../img/bann.png);
   text-align: center;
   word-spacing: 10px;
   font-size: 20px;
@@ -11,110 +23,27 @@ header {
 header nav {
   display: flex;
 }
-header nav ul {
+header nav .logo {
+  height: 70px;
+  width: 75px;
+  border: 2px dotted pink;
+}
+header nav .logo ul {
   justify-content: space-between;
 }
-header nav ul li {
+header nav .logo ul li {
   display: inline-block;
 }
-header nav ul li a {
+header nav .logo ul li a {
   color: rgb(73, 71, 71);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  /*index*/
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  background-color: rgba(248, 195, 226, 0.37);
-}
-
-@media (min-width: 480px) {
-  .galeria {
-    grid-template-columns: 1fr;
-  }
-}
-@media (min-width: 480px) and (min-width: 768px) {
-  .galeria .galeria {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 480px) and (min-width: 768px) and (min-width: 1200px) {
-  .galeria .galeria .galeria {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-section {
-  text-align: center;
-  padding: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: lavenderblush;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-span {
-  color: darkmagenta;
-}
-
 p {
-  margin-left: 10px;
+  margin-left: 5px;
   text-align: center;
 }
-
-img {
-  align-content: center;
-}
-
-footer aside {
-  justify-self: flex-start;
-}
-
-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 3px;
-  margin-top: 1px;
-  margin-bottom: 0;
-  background-color: darkgray;
-}
-
-header {
-  grid-area: header;
-}
-
-nav {
-  grid-area: nav;
-}
-
-.servicios {
-  grid-area: servicios;
-}
-
-.container {
-  grid-area: container;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-/*section servic,produc,*/
-.galeria {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 25px 25px;
-  grid-auto-flow: row;
+p span {
+  color: darkmagenta;
 }
 
 .image-square {
@@ -128,18 +57,98 @@ nav {
 
 .carousel {
   padding-left: 5px;
-  padding-top: 0px;
+  padding-top: 25px;
   margin-bottom: 10px;
 }
 
-/*form*/
+/*SERVICIOS*/
+.img-serv {
+  border: 3px double violet;
+}
+
+/*PRODUCTOS*/
+section {
+  text-align: center;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: lavenderblush;
+}
+section .galeria-img {
+  border: 3px ridge pink;
+}
+
+/*CATALOGO*/
+.cata {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+/*CONTACTO*/
+.contacto h1 {
+  min-width: auto;
+}
+
 .formulario {
   max-width: 640px;
   margin: 0 auto;
+  background-color: rgba(248, 202, 210, 0.781);
 }
 
-footer .piepag {
+/*section servic,produc,*/
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px 25px;
+  grid-auto-flow: row;
+}
+@media (min-width: 420px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*FOOTER*/
+.fcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3px;
+  margin-top: 1px;
+  margin-bottom: 0;
+  background-color: darkgray;
+}
+.fcontainer aside {
+  justify-self: flex-start;
+}
+.fcontainer aside .piepag {
   padding: 0px 5px 10px 5px;
-  height: 48px;
-  width: 48px;
+  height: 30px;
+  width: 30px;
+}
+@media (min-width: 420px) {
+  .fcontainer aside .piepag {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .fcontainer aside .piepag {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .fcontainer aside .piepag {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }/*# sourceMappingURL=estilos.css.map */

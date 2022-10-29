@@ -2,27 +2,35 @@ header {
     padding: 30px;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: pink;
+    background-image: url(../img/bann.png);
     text-align: center;
     word-spacing: 10px;
     font-size: 20px;
 
+
     nav {
         display: flex;
 
+        .logo {
+            height: 70px;
+            width: 75px;
+            border: 2px dotted pink;
 
-        ul {
-            justify-content: space-between;
+
+            ul {
+                justify-content: space-between;
 
 
-            li {
-                display: inline-block;
+                li {
+                    display: inline-block;
 
-                a {
-                    color: rgb(73, 71, 71);
+                    a {
+                        color: rgb(73, 71, 71);
+                    }
+
                 }
-
             }
         }
     }
+
 }
