@@ -1,4 +1,4 @@
-/*section*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   padding: 0;
@@ -78,13 +78,13 @@ section .galeria-img {
   border: 3px ridge pink;
 }
 
-/*CATALOGO*/
-.cata {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
-}
+/*CATALOGO
+
+ .cata{
+
+
+ }
+*/
 
 /*CONTACTO*/
 .contacto h1 {
@@ -127,6 +127,7 @@ section .galeria-img {
   padding: 3px;
   margin-top: 1px;
   margin-bottom: 0;
+  justify-items: stretch;
   background-color: darkgray;
 }
 .fcontainer aside {
